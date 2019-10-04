@@ -1,22 +1,68 @@
+/* Document */
+body {
+}
+html, body, .nopadding {
+	margin: 0;
+	padding: 0;
+}
+.centered {
+	text-align: center;
+}
+
 /* Header */
 header {
-	text-align: center;
+	background-color: #222222;
+	color: white;
+	padding: 15px;
 }
 
 /* Navigation Bar */
 nav ul {
+	background-color: #DDDDDD;
+	/* hide the unordered list dot */
 	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #222222;
+	/* without this the element's hight is always 0... */
+	overflow: auto;
 }
 nav li {
+	/* force list to be horizontal */
 	float: left;
 }
 nav li a {
-	color: white;
-	text-align: center;
+	padding: 18px 20px;
+	color: #111111;
+	/* removes href text underline */
+	text-decoration: none;
+	/* without this the element's hight shrinks to fit the text */
 	display: block;
-	padding: 15px;
+}
+nav li a:hover {
+	background-color: #555555;
+	color: white;
+	font-weight: 500;
+	text-decoration: underline;
+}
+
+/* Main Contents */
+section {
+	background-color: white;
+}
+article {
+	margin: 50px;
+	max-width: 400px;
+	display: inline-block;
+}
+
+/* Footer */
+footer {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 8px;
+	color: white;
+	background-color: #222222;
+}
+footer p {
+	margin: 3px;
 }

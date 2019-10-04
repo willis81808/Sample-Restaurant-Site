@@ -3,31 +3,44 @@
 <head>
 	<title>Restaurant</title>
 	<link rel="stylesheet" href="styles/shared.css">
-	<script src="scripts/canvas.js"></script>
+	<script src="scripts/restaurant-namer.js" charset="utf-8"></script>
 </head>
 
 <body>
 	<main>
-		<header>
-			<!-- Restaurant name/title here -->
-			<h1>My Restaurant</h1>
+		<!-- Restaurant name/title here -->
+		<header class="centered">
+			<big><h1 id="header-text"> </h1></big>
 		</header>
 
+		<!-- Navigation bar here -->
 		<nav>
-			<!-- Navigation bar here -->
-			<ul>
-				<li><a href="">Home</a></li>
-				<li><a href="">Menu</a></li>
-				<li><a href="">Contact us</a></li>
+			<ul class="nopadding">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Menu</a></li>
+				<li><a href="#">Contact us</a></li>
 			</ul>
 		</nav>
 
-		<section>
-			<!-- Contents of home page -->
+		<!-- Contents of home page -->
+		<section class="centered">
+			<article style="text-align: left;">
+				<img src="images/table-stock-photo.jpg" width="400px" height="150px" style="object-fit: cover;">
+
+				<h3>To us it's about more than simply food; it's about art.</h3>
+				
+				<p>Come get inspired by the culinary genius of our menu! Our focus is on fresh, local farm-to-table cuisine that combines the best of what the San Francisco Bay Area has to offer. Join us every Saturday morning as we feature a new guest chef, or enjoy our amazing selection of seasonal foods ranging from traditional to modern to exotic. You'll find an ever-changing menu of a la carte dishes, including fresh-made pasta, sandwiches, and salads.</p>
+
+				<p>We offer a variety of vegetarian and vegan options. We also have a full bar with cocktails, an impressive wine list, and an extensive wine cellar, with over 30,000 bottles under glass. The upstairs bar includes a fully stocked bar, with a wide variety of beer from all over the world. Come try a few of our famous creations! Take time to enjoy the atmosphere that has been built over the past 14 years in our cozy little kitchen - We look forward to seeing you!</p>
+			</article>
 		</section>
 
-		<footer>
-			<!-- Footer with contact info -->
+		<!-- Footer with contact info -->
+		<footer class="centered">
+			<small>
+				<p>3698 Briercliff Road, San Francisco, CA 94121</p>
+				<p>(415) 682-0562</p>
+			</small>
 		</footer>
 	</main>
 </body>
