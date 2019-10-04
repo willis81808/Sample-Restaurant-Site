@@ -1,0 +1,22 @@
+/* Header */
+header {
+	text-align: center;
+}
+
+/* Navigation Bar */
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #222222;
+}
+nav li {
+	float: left;
+}
+nav li a {
+	color: white;
+	text-align: center;
+	display: block;
+	padding: 15px;
+}
