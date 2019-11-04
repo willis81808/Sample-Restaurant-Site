@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact us</title>
+	
+	<link rel="stylesheet" href="styles/restaurantStyles.css">
+
+	<script src="scripts/restaurant-namer.js" charset="utf-8"></script>
+
+	<style type="text/css">
+		form {
+			display: grid;
+			grid-template-columns: auto auto auto;
+			padding: 20px;
+		}
+		form * {
+			margin: 5px;
+		}
+		.form-label {
+			display: inline-block;
+			text-align: right;
+			font-weight: bold;
+		}
+	</style>
+</head>
+
+<body>
+	<main>
+		<!-- Restaurant name/title here -->
+		<header class="centered">
+			<span id="header-text">...</span>
+		</header>
+
+		<!-- Navigation bar here -->
+		<nav>
+			<ul class="nopadding">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="#">Contact us</a></li>
+			</ul>
+		</nav>
+
+		<!-- Contents of home page -->
+		<section class="centered">
+			<form method="POST" action="#" id="contactform">
+				<div class="form-label">Name:</div>
+				<input type="text" name="name" autofocus>
+				<br>
+
+				<div class="form-label">Email:</div>
+				<input type="text" name="email">
+				<br>
+
+				<div class="form-label">Phone:</div>
+				<input type="number" name="phone">
+				<br>
+
+				<div class="form-label">Reason for Inquiry:</div>
+				<select name="reason">
+					<option value="1" selected>Catering</option>
+					<option value="2">Private Party</option>
+					<option value="3">Feedback</option>
+					<option value="4">Other</option>
+				</select>
+				<br>
+
+				<div class="form-label">Additional Information:</div>
+				<textarea name="info" form="contactform" rows="6" style="resize: none;"></textarea>
+				<br>
+
+				<div class="form-label">Have you been to the restaurant?</div>
+				<div style="text-align: left;">
+					<input type="radio" name="visited" value="no" checked>No
+					<input type="radio" name="visited" value="yes">Yes
+				</div>
+				<br>
+
+				<div class="form-label">Best days to contact you:</div>
+				<div style="text-align: left;">
+					<input type="checkbox" name="monday">M
+					<input type="checkbox" name="tuesday">T
+					<input type="checkbox" name="wednesday">W
+					<input type="checkbox" name="thursday">Th
+					<input type="checkbox" name="friday">F
+				</div>
+				<br>
+			</form>
+
+			<input type="submit" value="Send Request" form="contactform">
+		</section>
+
+		<!-- Footer with contact info -->
+		<footer class="centered">
+			<small>
+				<address>3698 Briercliff Road, San Francisco, CA 94121</address>
+				<address>(415) 682-0562</address>
+			</small>
+		</footer>
+	</main>
+</body>
+</html>

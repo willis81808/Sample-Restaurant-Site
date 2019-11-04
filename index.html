@@ -1,24 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Restaurant</title>
-	<link rel="stylesheet" href="styles/shared.css">
+	<title>Home Page</title>
+	
+	<link rel="stylesheet" href="styles/restaurantStyles.css">
+
 	<script src="scripts/restaurant-namer.js" charset="utf-8"></script>
+
+	<style type="text/css">
+		article {
+			margin: 50px;
+			max-width: 400px;
+			display: inline-block;
+		}
+	</style>
 </head>
 
 <body>
 	<main>
 		<!-- Restaurant name/title here -->
 		<header class="centered">
-			<big><h1 id="header-text"> </h1></big>
+			<span id="header-text">...</span>
 		</header>
 
 		<!-- Navigation bar here -->
 		<nav>
 			<ul class="nopadding">
 				<li><a href="#">Home</a></li>
-				<li><a href="#">Menu</a></li>
-				<li><a href="#">Contact us</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="contact.html">Contact us</a></li>
 			</ul>
 		</nav>
 
@@ -38,8 +48,8 @@
 		<!-- Footer with contact info -->
 		<footer class="centered">
 			<small>
-				<p>3698 Briercliff Road, San Francisco, CA 94121</p>
-				<p>(415) 682-0562</p>
+				<address>3698 Briercliff Road, San Francisco, CA 94121</address>
+				<address>(415) 682-0562</address>
 			</small>
 		</footer>
 	</main>

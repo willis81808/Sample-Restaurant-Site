@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Tangerine&display=swap');
+
 /* Document */
-body {
+body, section {
+	background-color: #FDFDFD;
+}
+header, footer {
+	background-color: #223843;
 }
 html, body, .nopadding {
 	margin: 0;
@@ -11,14 +17,15 @@ html, body, .nopadding {
 
 /* Header */
 header {
-	background-color: #222222;
+	font-family: 'Tangerine', cursive;
+	font-size: 65px;
 	color: white;
-	padding: 15px;
+	padding: 20px;
 }
 
 /* Navigation Bar */
 nav ul {
-	background-color: #DDDDDD;
+	background-color: #D2D8DB;
 	/* hide the unordered list dot */
 	list-style-type: none;
 	/* without this the element's hight is always 0... */
@@ -37,20 +44,10 @@ nav li a {
 	display: block;
 }
 nav li a:hover {
-	background-color: #555555;
+	background-color: #A0C5D8;
 	color: white;
-	font-weight: 500;
-	text-decoration: underline;
-}
-
-/* Main Contents */
-section {
-	background-color: white;
-}
-article {
-	margin: 50px;
-	max-width: 400px;
-	display: inline-block;
+	text-decoration: none;
+	font-weight: bold;
 }
 
 /* Footer */
@@ -61,7 +58,6 @@ footer {
 	bottom: 0;
 	padding: 8px;
 	color: white;
-	background-color: #222222;
 }
 footer p {
 	margin: 3px;

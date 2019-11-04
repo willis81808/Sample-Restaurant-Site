@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Menu</title>
+	
+	<link rel="stylesheet" href="styles/restaurantStyles.css">
+
+	<script src="scripts/restaurant-namer.js" charset="utf-8"></script>
+
+	<style type="text/css">
+		body, section {
+			background-color: #A0C5D8;
+		}
+		.menu-grid {
+			margin: 25px 50px 0 50px;
+			display: grid;
+			grid-template-columns: auto auto auto;
+			padding: 10px;
+		}
+		.beverage-grid {
+			display: inline-grid;
+			grid-template-columns: auto auto auto;
+			margin: 10px 100px 0 100px;
+		}
+		#beverages {
+			border: 1px solid white;
+		}
+		#beverages div {
+			padding: 10px;
+		}
+		.menu-item {
+			padding: 15px;
+			margin: 1px;
+			text-align: center;
+			color: #223843;
+			background-color: white;
+			border: 1px solid white;
+		}
+		.menu-item b {
+			font-size: 18px;
+		}
+	</style>
+</head>
+
+<body>
+	<main>
+		<!-- Restaurant name/title here -->
+		<header class="centered">
+			<span id="header-text">...</span>
+		</header>
+
+		<!-- Navigation bar here -->
+		<nav>
+			<ul class="nopadding">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#">Menu</a></li>
+				<li><a href="contact.html">Contact us</a></li>
+			</ul>
+		</nav>
+
+		<!-- Contents of home page -->
+		<section class="centered">
+			<!-- Foods -->
+			<article class="menu-grid">
+				<div class="menu-item">
+					<b>Burger and Fries</b>
+					<p>An American Classic! <br> Your choice - with or without cheese <br> Pickle, onion, tomato, and lettuce <br> Served with out famous thick cut french fries <br> $7.95</p>
+				</div>
+				<div class="menu-item">
+					<b>Hot Dog and Chips</b>
+					<p>A summer Classic! <br> Your choice - white or wheat bun <br> Relish, mustard, and ketchup <br> Served with our house-made chips <br> $7.95</p>
+				</div>
+				<div class="menu-item">
+					<b>Italian Sausage and Peppers</b>
+					<p>An All-Time Favorite! <br> Your choice - mild or spicy Cole Slaw <br> Served with garlic mashers <br> $10.95</p>
+				</div>
+				<div class="menu-item">
+					<b>Tenderloin Sandwich and Chips</b>
+					<p>Really Hits the Spot! <br> Plain or Sesame Seed Bun <br> Pickle, onion, tomato, and lettuce <br> Served with our house-made chips <br> $8.95</p>
+				</div>
+				<div class="menu-item">
+					<b>House Salad</b>
+					<p>On the Lighter Side <br> Your choice - with or without cheese <br> Iceberg lettuce, tomatoes, petters <br> Thousand Island or Ranch Dressing <br> served with a dinner roll <br> $6.95</p>
+				</div>
+				<div class="menu-item">
+					<b>Brisket Sandwich and Fries</b>
+					<p>A Taste of Texas! <br> Smoke Brisket on thick-cut Texas Toast <br> Cole Slaw <br> Served with our famous thick-cut french fries <br> $7.95</p>
+				</div>
+			</article>
+			<!-- Beverages -->
+			<article class="beverage-grid">
+				<br>
+				<div style="width: 250px;" id="beverages">
+					<div style="background-color: white;">
+						<b>Beverages</b>
+						<br>
+					</div>
+					<div>
+						<span>Root Beer</span>
+						<span>$3.00</span>
+					</div>
+					<div style="background-color: white;">
+						<span>Bottled Water</span>
+						<span>$1.25</span>
+					</div>
+					<div>
+						<span>Lemonade</span>
+						<span>$1.00</span>
+					</div>
+					<div style="background-color: white;">
+						<span>Iced Tea</span>
+						<span>$1.25</span>
+					</div>
+				</div>
+				<br>
+			</article>
+		</section>
+
+		<!-- Footer with contact info -->
+		<footer class="centered">
+			<small>
+				<address>3698 Briercliff Road, San Francisco, CA 94121</address>
+				<address>(415) 682-0562</address>
+			</small>
+		</footer>
+	</main>
+</body>
+</html>
